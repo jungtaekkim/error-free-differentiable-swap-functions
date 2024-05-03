@@ -1,0 +1,36 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools",
+]
+
+[tool.setuptools]
+packages = [
+    "error_free_dsf",
+]
+
+[project]
+name = "error-free-differentiable-swap-functions"
+version = "0.1.0"
+authors = [
+    {name = "Jungtaek Kim", email = "jungtaek.kim.mail@gmail.com"},
+]
+description = "Generalized Neural Sorting Networks with Error-Free Differentiable Swap Functions"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "numpy",
+    "torch",
+    "torchvision",
+    "tqdm",
+    "einops",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
