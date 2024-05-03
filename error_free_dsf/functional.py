@@ -85,13 +85,7 @@ def execute_sort(
         if not use_ste:
             X = (w_max @ combine_max.T.unsqueeze(-3)) + (w_min @ combine_min.T.unsqueeze(-3))
             x = (alpha * a + (1-alpha) * b) @ combine_min.T + ((1-alpha) * a + alpha * b) @ combine_max.T
-
         else:
-#            mask_half = alpha == 0.5
-#            mask_not_half = alpha != 0.5
-
-#            alpha_hard = (torch.minimum(a, b) == a).type(torch.float32) * mask_not_half + alpha * mask_half
-#            print(alpha_hard)
             alpha_hard = (torch.minimum(a, b) == a).type(torch.float32)
 
             w_min_hard = alpha_hard.unsqueeze(-2) * aX + (1-alpha_hard).unsqueeze(-2) * bX

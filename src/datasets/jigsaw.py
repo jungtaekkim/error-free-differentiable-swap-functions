@@ -1,3 +1,7 @@
+"""
+This code is obtained from https://github.com/Felix-Petersen/diffsort and then modified.
+"""
+
 import torch
 from torchvision import datasets
 import torchvision.transforms as transforms

@@ -76,7 +76,6 @@ def odd_even_network(n):
 
         count = 0
 
-        # for i in range(n // 2 if not (even and shifted) else n // 2 - 1):
         for i in range(int(shifted), n-1, 2):
             a, b = i, i + 1
             split_a[count, a], split_b[count, b] = 1, 1

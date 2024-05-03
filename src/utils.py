@@ -1,3 +1,7 @@
+"""
+This code is obtained from https://github.com/Felix-Petersen/diffsort and then modified.
+"""
+
 import numpy as np
 import torch
 
